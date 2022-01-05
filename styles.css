@@ -1,0 +1,108 @@
+/*
+ * Copyright © 2022 EPAM Systems, Inc. All Rights Reserved. All information contained herein is, and remains the
+ * property of EPAM Systems, Inc. and/or its suppliers and is protected by international intellectual
+ * property law. Dissemination of this information or reproduction of this material is strictly forbidden,
+ * unless prior written permission is obtained from EPAM Systems, Inc
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.row{
+    border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+    section, .container{
+        height: 100vh;
+    }
+    .row{
+        display: table-caption;
+        width: 80%;
+        max-width: 1100px;
+    }
+}
+
+.col{
+    background-color: seagreen;
+    padding: 1.7rem 2rem;
+    color: #fff;
+    height: 30%;
+
+}
+
+.col > * {
+    margin-bottom: 1rem;
+}
+
+.col-one{
+    border-radius: 10px 10px 0 0 ;
+    background-color: hsl(31, 77%, 52%);
+}
+.col-two{
+    background-color: hsl(184, 100%, 22%);
+}
+.col-three{
+    border-radius: 0 0 10px 10px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.col h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.col p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .9rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.col button{
+    background-color: hsl(0, 0%, 95%) ;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 100px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+.col-one button{
+    color: hsl(31, 77%, 52%);
+}
+.col-two button{
+    color: hsl(184, 100%, 22%);
+}
+.col-three button{
+    color:hsl(179, 100%, 13%)
+}
+
+@media (min-width: 800px) {
+    .col{
+        display: table-cell;
+        width: 33%;
+    }
+    .col-one{
+        border-radius: 10px  0  0 10px ;
+    }
+    .col-three{
+        border-radius: 0 10px 10px 0;
+    }
+}
